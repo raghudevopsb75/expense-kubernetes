@@ -1,0 +1,9 @@
+controller:
+  service:
+    targetPorts:
+      http: http
+      https: http
+    annotations:
+      service.beta.kubernetes.io/aws-load-balancer-subnets: ["subnet-0f7b8cc575bea3207", "subnet-03efefa3ea52e2c34"]
+
+
