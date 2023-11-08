@@ -5,8 +5,9 @@ controller:
 #    targetPorts:
 #      http: http
 #      https: http
-#    annotations:
-#      service.beta.kubernetes.io/aws-load-balancer-subnets: ["subnet-0f7b8cc575bea3207", "subnet-03efefa3ea52e2c34"]
+    annotations:
+      service.beta.kubernetes.io/aws-load-balancer-type: "external"
+      service.beta.kubernetes.io/aws-load-balancer-nlb-target-type: "ip"
 
 
 ## helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
